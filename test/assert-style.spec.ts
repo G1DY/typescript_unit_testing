@@ -1,3 +1,5 @@
+import { expect } from 'chai';
+
 describe('Test Cases using assert-style', () => {
   it('should test all the assertion in types', () => {
     const name: string = 'Gideon';
@@ -6,7 +8,8 @@ describe('Test Cases using assert-style', () => {
     const objData: Object = { name: 'Gideon', age: '30' };
     const boolData: Boolean = false;
 
-    expect(name).to.be;
-    expect(name).to.be.equal('Gideon');
+    expect(name).to.be.ok;
+    expect(name).to.equal('Gideon');
+    expect(name).to.be.a('string');
   });
 });
