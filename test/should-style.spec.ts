@@ -24,8 +24,12 @@ describe('Should testing Style', () => {
     arrData.should.be.a('Array');
     // object
     objData.should.be.ok;
-    objData.should.have.property(name).equal('Gideon');
-    objData.should.have.property(age).equal('30');
+    objData.should.have.property('name').equal('Gideon');
+    objData.should.have.property('age').equal(30);
     objData.should.be.a('object');
+    // boolean
+    boolData.should.be.false;
+    boolData.should.be.a('boolean');
+    boolData.should.equal(false);
   });
 });
